@@ -121,7 +121,51 @@ transform:scale(1);
 }
 
 }
+.balloon{
+    position:fixed;
+    font-size:55px;
+    animation:balloonFloat 8s ease-in-out infinite;
+    z-index:1;
+}
 
+.balloon1{
+    left:5%;
+    bottom:-40px;
+}
+
+.balloon2{
+    left:85%;
+    bottom:-20px;
+    animation-delay:2s;
+}
+
+.balloon3{
+    left:20%;
+    bottom:-60px;
+    animation-delay:4s;
+}
+
+.balloon4{
+    left:70%;
+    bottom:-30px;
+    animation-delay:1s;
+}
+
+@keyframes balloonFloat{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-60px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
 .sparkle{
     position:fixed;
     font-size:35px;
@@ -188,6 +232,10 @@ alert("Welcome to your Birthday Adventure! 🎉");
 <div class="sparkle" style="top:80%;right:8%;">🫧</div>
 <div class="sparkle" style="top:50%;left:3%;">💖</div>
 <div class="sparkle" style="top:45%;right:5%;">🌼</div>
+<div class="balloon balloon1">🎈</div>
+<div class="balloon balloon2">🎈</div>
+<div class="balloon balloon3">🎈</div>
+<div class="balloon balloon4">🎈</div>
 </body>
 
 </html>
