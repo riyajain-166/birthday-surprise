@@ -1,1 +1,172 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+
+<title>Happy Birthday 🎂</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:linear-gradient(180deg,#8ec5fc,#e0c3fc);
+
+overflow:hidden;
+
+font-family:'Press Start 2P', cursive;
+
+}
+
+.card{
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+text-align:center;
+
+width:90%;
+
+max-width:500px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+animation:pop 1s;
+
+}
+
+h1{
+
+font-size:22px;
+
+line-height:1.8;
+
+color:#333;
+
+}
+
+p{
+
+margin-top:25px;
+
+font-size:12px;
+
+line-height:2;
+
+color:#666;
+
+}
+
+button{
+
+margin-top:30px;
+
+padding:18px 35px;
+
+border:none;
+
+border-radius:50px;
+
+background:#59c173;
+
+color:white;
+
+font-size:13px;
+
+cursor:pointer;
+
+font-family:'Press Start 2P', cursive;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+}
+
+@keyframes pop{
+
+from{
+
+opacity:0;
+
+transform:scale(.5);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>
+
+🎂 HAPPY BIRTHDAY
+
+</h1>
+
+<p>
+
+Someone spent hours making this...
+
+just for you ❤️
+
+</p>
+
+<button onclick="start()">
+
+START 🎁
+
+</button>
+
+</div>
+
+<script>
+
+function start(){
+
+alert("Welcome to your Birthday Adventure! 🎉");
+
+}
+
+</script>
+
+</body>
+
+</html>
